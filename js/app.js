@@ -1,16 +1,7 @@
-const title = document.querySelector(".title__container");
-const body = document.querySelector("body");
+const title = document.querySelector(".target");
 
-function changeColor() {
-  let currentColor = title.style.color;
-  if (currentColor === "blue") {
-    console.log("it's blue");
-    currentColor = "tomato";
-  } else {
-    currentColor = "blue";
-    console.log("it's tomato");
-  }
-  title.style.color = currentColor;
+function handleTitleClick() {
+  title.classList.toggle("colorChange");
 }
 
-title.addEventListener("click", changeColor);
+title.addEventListener("click", handleTitleClick);
