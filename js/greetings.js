@@ -6,6 +6,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
+  // event.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const userName = loginInput.value;
   localStorage.setItem(USERNAME_KEY, userName);
