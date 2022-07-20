@@ -44,10 +44,7 @@ const quotes = [
 const quote = document.querySelector("#quote");
 const author = document.querySelector("#author");
 
-function randomGenerator() {
-  const order = Math.floor(Math.random() * quotes.length);
-  return order;
-}
+const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = `"${quotes[randomGenerator()].quote}"`;
-author.innerText = `- ${quotes[randomGenerator()].author} -`;
+quote.innerText = `"${todaysQuote.quote}"`;
+author.innerText = `- ${todaysQuote.author} -`;
