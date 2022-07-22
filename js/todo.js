@@ -7,7 +7,7 @@ function paingToDo(newTodo) {
   const span = document.createElement("span");
   li.appendChild(span);
   span.innerText = newTodo;
-  console.log(li);
+  toDoList.appendChild(li);
 }
 
 function handleToDoSubmit(event) {
